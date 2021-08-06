@@ -5,7 +5,6 @@ from pageobjects.homepage import HomePage
 
 class TestStartPractising(BaseClass):
 
-    def test_start_practicing(self, driver):
-        homepage = HomePage(driver)
+    def test_start_practicing(self):
+        homepage = HomePage
         homepage.click_button(homepage.start_practicing)
-
