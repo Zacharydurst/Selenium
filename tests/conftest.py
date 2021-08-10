@@ -4,7 +4,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 @pytest.fixture(scope="class")
-def driver(request):
+def driver():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get("https://www.seleniumeasy.com/test/")
     driver.maximize_window()
